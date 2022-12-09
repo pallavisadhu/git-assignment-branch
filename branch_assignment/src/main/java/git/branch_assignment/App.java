@@ -1,4 +1,4 @@
-package git.branchesassignmet;
+package git.branch_assignment;
 
 /**
  * Hello world!
