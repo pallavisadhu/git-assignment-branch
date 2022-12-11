@@ -10,6 +10,9 @@ public class ADDY {
 	public ArrayList<String> addY(ArrayList<String> al) {
 		
 		ArrayList<String> output = new ArrayList<String>();
+		if(al.isEmpty()) {
+			output.add("");
+		}
 		for(String s : al) {
 			output.add("y"+s+"y");
 		
@@ -54,6 +57,17 @@ public class ADDY {
 		ArrayList<String> actual = addY(al);
 		ArrayList<String> expected = new ArrayList<String>();
 		expected.add("yyayy");
+		Assert.assertEquals(actual, expected);
+
+	}
+	
+	@Test
+	public void testCase4() {
+		ArrayList<String> al = new ArrayList<String>();
+		al.add(" ");
+		ArrayList<String> actual = addY(al);
+		ArrayList<String> expected = new ArrayList<String>();
+		expected.add("y y");
 		Assert.assertEquals(actual, expected);
 
 	}
