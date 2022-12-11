@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="git.branch_assignment.MatchUp">
+      <class name="git.branch_assignment.ADDY">
         <methods>
-          <include name="testCase1"/>
+          <include name="testCase4"/>
         </methods>
-      </class> <!-- git.branch_assignment.MatchUp -->
+      </class> <!-- git.branch_assignment.ADDY -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
